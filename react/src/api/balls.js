@@ -17,19 +17,20 @@ const createBalls = async (ball, jwt) => {
         .then(response => response.json());
 }
 
-// const deleteBall = async (ball, jwt) => {
-//     const headers = new Headers();
-//     headers.append("Content-Type", "application/json");
-//     headers.append("Authorization", jwt);
-//     const requestOptions = {
-//         method: 'DELETE', headers, redirect: 'follow'
-//     };
-//     return fetch("http://localhost:3001/balls/" + ball._id, requestOptions)
-//         .then(response => response.text());
-// }
+const deleteBall = async (ball, jwt) => {
+    const headers = new Headers();
+    headers.append("Content-Type", "application/json");
+    headers.append("Authorization", jwt);
+    const requestOptions = {
+        method: 'DELETE', headers, redirect: 'follow'
+    };
+    return fetch("http://localhost:3001/balls/" + ball._id, requestOptions)
+        .then(response => response.text());
+}
 
 export {
     getBalls,
-    createBalls
+    createBalls,
+    deleteBall
 
 }

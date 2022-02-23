@@ -10,13 +10,5 @@ const Ball = ({ball, onDelete}) =>
         </Card.Body>
     </Card>
 
-
-    // <div>
-    //     <input type="checkbox"></input>
-    //     <p className="title">{task.title}</p>
-    //     <p className="author">{task.author}</p>
-    //     <Button variant="primary" onClick={onDelete}>Eliminar</Button>
-    // </div>
-
     
 export default Ball;

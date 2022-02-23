@@ -2,7 +2,7 @@ import Ball from "./Ball"
 import BallForm from './Ballform';
 
 import { useState, useEffect } from 'react';
-import {getBalls, createBalls} from "../api/balls";
+import {getBalls, createBalls, deleteBall} from "../api/balls";
 
 const BallList = ({jwt}) => {
     const [balls, setBalls] = useState([]);
@@ -19,12 +19,12 @@ const BallList = ({jwt}) => {
     };
     
 
-    //const doDeleteBall = (ball, jwt) => {
-     //   setIsLoading(true);
-    //    deleteBall(ball)
-    //    .then(loadData);
-    //    setIsLoading(false)
-  //  };
+    const doDeleteBall = (ball, jwt) => {
+       setIsLoading(true);
+       deleteBall(ball)
+       .then(loadData);
+       setIsLoading(false)
+   };
 
     const loadData = () => {
         setIsLoading(true);
@@ -42,7 +42,7 @@ const BallList = ({jwt}) => {
                 <Ball 
                     key={ball._id} 
                     ball={ball} 
-                  //  onDelete={() => doDeleteBall(ball)}
+                   onDelete={() => doDeleteBall(ball)}
                 />)}
         <BallForm createBall={doCreateBall}></BallForm>
     </>

@@ -7,7 +7,6 @@ var ballController = require('../controllers/ball')
 router.get('/', async function(req, res) {
 
     const balls = await ballController.getBall();
-
     res.json(balls);
 
 });
@@ -17,25 +16,21 @@ router.get('/', async function(req, res) {
 router.post('/',async(req, res) => {
 
     const {ball} = req.body;
-
     const result =  await ballController.createBall(ball);
-
     res.json(result);
 
 });
 
 
-//para eliminar
 
-// router.delete('/:ballId', async(req,res) => {
 
-//     const {ballId} = req.params;
+router.delete('/:ballId', async(req,res) => {
 
-//     const result = await ballController.deleteTask(ballId);
+    const {ballId} = req.params;
+    const result = await ballController.deleteBall(ballId);
+    res.json(result);
 
-//     res.json(result);
-
-// });
+});
 
 
 
