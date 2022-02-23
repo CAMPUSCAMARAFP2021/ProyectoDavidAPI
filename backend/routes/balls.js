@@ -6,7 +6,7 @@ var ballController = require('../controllers/ball')
 
 router.get('/', async function(req, res) {
 
-    const balls = await ballController.getBalls();
+    const balls = await ballController.getBall();
 
     res.json(balls);
 
@@ -40,3 +40,4 @@ router.post('/',async(req, res) => {
 
 
 module.exports = router;
+

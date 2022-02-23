@@ -13,7 +13,7 @@ const createBalls = async (ball, jwt) => {
     const requestOptions = {
         method: 'POST', headers, body,redirect: 'follow'
     };
-    return fetch("http://localhost:3001/", requestOptions)
+    return fetch("http://localhost:3001/balls", requestOptions)
         .then(response => response.json());
 }
 
