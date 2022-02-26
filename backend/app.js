@@ -9,7 +9,7 @@ var cors = require ('cors');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var ballsRouter = require('./routes/balls');
-var brandRouter = require('./routes/brands');
+var meetRouter = require('./routes/meets');
 var playerRouter = require('./routes/player');
 
 var app = express();
@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/balls', ballsRouter);
-app.use('/brand', brandRouter);
+app.use('/meet', meetRouter);
 app.use('/player', playerRouter);
 
 // catch 404 and forward to error handler

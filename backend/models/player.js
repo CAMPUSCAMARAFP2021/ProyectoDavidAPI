@@ -4,8 +4,12 @@ const schema = new Schema({
 
     name: String,
   
-  },
+    balls:[{ type: Schema.Types.ObjectId,
 
+      ref: 'Ball'
+}]
+      
+     },
   );
 
 

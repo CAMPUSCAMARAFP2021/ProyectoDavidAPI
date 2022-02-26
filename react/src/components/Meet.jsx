@@ -2,13 +2,13 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 
-const Player = ({ player, onDelete}) =>  
+const Meet = ({ meet, onDelete}) =>  
     <Card style={{ width: '20rem' }}>
         <Card.Body>
-            <Card.Title>{player.name}</Card.Title>
+            <Card.Title>{meet.date}</Card.Title>
             <Button variant="primary" onClick={onDelete}>Eliminar</Button>
         </Card.Body>
     </Card>
 
     
-export default Player;
+export default Meet;

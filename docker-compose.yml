@@ -20,7 +20,7 @@ services:
 
     environment:
 
-      MONGODB_URL: mongodb://mongo:27017/todoList
+      MONGODB_URL: mongodb://mongo:27017/ballsProject
 
   react:
 
@@ -69,5 +69,5 @@ services:
 
     environment:
 
-      ME_CONFIG_MONGODB_URL: mongodb://mongo:27017/todoList
+      ME_CONFIG_MONGODB_URL: mongodb://mongo:27017/
 

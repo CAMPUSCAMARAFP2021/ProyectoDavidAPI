@@ -3,6 +3,8 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BallList from './components/BallList';
 import PlayerList from './components/PlayerList';
+import MeetList from './components/MeetList';
+
 import Container from 'react-bootstrap/Container';
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
     <h1 className="header">Meet Organizer</h1>
     <PlayerList/>
       <BallList/>
+      <MeetList/>
   </Container>
 </Container> 
 }
