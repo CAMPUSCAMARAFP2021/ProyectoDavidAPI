@@ -2,14 +2,13 @@ const {model, Schema} = require('mongoose');
 
 const schema = new Schema({
 
+    name: String,
   
-
-    name:  String
-
   },
 
   );
 
-const Brand = model('Brand', schema);
 
-module.exports = Brand;
+const Player = model('Player', schema);
+
+module.exports = Player;
