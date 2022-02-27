@@ -3,6 +3,7 @@ var express = require('express');
 var router = express.Router();
 
 var meetController = require('../controllers/meet')
+var playerRouter = require('./player')
 
 router.get('/', async function(req, res) {
 
@@ -12,6 +13,15 @@ router.get('/', async function(req, res) {
 
 });
 
+router.use('/:meetId/player', async (req, res, next) => {
+
+    const {meetId} = req.params;
+
+    req.player = await meetController.getMeet(meetId);
+
+    next();
+
+} ,playerRouter);
 
 
 router.post('/',async(req, res) => {

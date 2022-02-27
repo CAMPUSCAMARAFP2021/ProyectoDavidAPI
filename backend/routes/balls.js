@@ -22,8 +22,6 @@ router.delete('/:ballId', async(req,res) => {
 
 router.get('/', async function(req, res) {
 
-    console.log(req.player)
-
     const balls = req.player ? await ballController.getBallsbyPlayer(req.player) : await ballController.getBall();
 
     res.json(balls);

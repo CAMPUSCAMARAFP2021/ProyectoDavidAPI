@@ -8,7 +8,8 @@ var ballRouter = require('./balls')
 
 router.get('/', async function(req, res) {
 
-    const players = await playerController.getPlayer();
+    const players = req.player ? await playerController.getPlayerbyMeet(req.player) : await playerController.getPlayer();
+
     res.json(players);
 
 });
