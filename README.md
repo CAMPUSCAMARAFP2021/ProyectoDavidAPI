@@ -147,3 +147,4 @@ Para usar la API se debe de utilizar POSTMAN, para ingresar la ruta y el método
 ...etc
 
 Hecho por Salva Blanquer Bru.
+Lucia: apoyo Backend
