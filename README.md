@@ -95,7 +95,7 @@ La api-restFull está hecha como proyecto final del segundo trimestre del grado 
 
 La proyecto sirve para organizar quedadas para jugar a distintos deportes con amigos.
 
-Dentro del proyecto encontrarás dos directorios [backend](https://github.com/CAMPUSCAMARAFP2021/ProyectoDavidAPI/tree/master/backend) y [react](https://github.com/CAMPUSCAMARAFP2021/ProyectoDavidAPI/tree/master/react), el primero contiene lo necesario poder realizar todas las conexiones necesarias a la base de datos([mongoDB](https://www.mongodb.com/es/what-is-mongodb)) y las necesarias [peticiones HTTP](https://yosoy.dev/peticiones-http-get-post-put-delete-etc/),a su vez que la creacion y eliminacion de los distintos objectos necesarios y las rutas con las que interactuaremos más adelante, para el correcto funcionamiento del proyecto, mientras que la segunda carpeta contiene 
+Dentro del proyecto encontrarás dos directorios [backend](https://github.com/CAMPUSCAMARAFP2021/ProyectoDavidAPI/tree/master/backend) y [react](https://github.com/CAMPUSCAMARAFP2021/ProyectoDavidAPI/tree/master/react), el primero contiene lo necesario poder realizar todas las conexiones necesarias a la base de datos([mongoDB](https://www.mongodb.com/es/what-is-mongodb)) y las necesarias [peticiones HTTP](https://yosoy.dev/peticiones-http-get-post-put-delete-etc/),a su vez que la creacion y eliminacion de los distintos objectos necesarios y las rutas con las que interactuaremos más adelante, para el correcto funcionamiento del proyecto, mientras que la segunda carpeta muestra mediante la interfaz creada el resultado de las conexiones,rutas y peticiones.
 
 El uso de la carpeta `node_modules` está omitido por el momento.
 
@@ -147,3 +147,4 @@ Para usar la API se debe de utilizar POSTMAN, para ingresar la ruta y el método
 ...etc
 
 Hecho por Salva Blanquer Bru.
+Lucia: apoyo Backend
