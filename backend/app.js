@@ -11,6 +11,7 @@ var usersRouter = require('./routes/users');
 var ballsRouter = require('./routes/balls');
 var meetRouter = require('./routes/meets');
 var playerRouter = require('./routes/player');
+var brandRouter = require('./routes/brand');
 
 var app = express();
 app.use(cors());
@@ -31,6 +32,8 @@ app.use('/users', usersRouter);
 app.use('/balls', ballsRouter);
 app.use('/meet', meetRouter);
 app.use('/player', playerRouter);
+app.use('/brand', brandRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

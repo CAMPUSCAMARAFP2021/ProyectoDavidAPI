@@ -3,8 +3,10 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BallList from './components/BallList';
 import PlayerList from './components/PlayerList';
+import BrandList from './components/BrandList';
 import MeetList from './components/MeetList';
 import Container from 'react-bootstrap/Container';
+
 
 function App() {
   return <Container className="p-3">
@@ -27,6 +29,8 @@ function App() {
       <BallList/>
       <h2> Create Meet</h2>
       <MeetList/>
+      <h2> Create Brand</h2>
+      <BrandList/>
 </div>
 
 
