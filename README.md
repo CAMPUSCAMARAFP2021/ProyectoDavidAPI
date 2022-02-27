@@ -120,13 +120,15 @@ El uso de la carpeta `node_modules` está omitido por el momento.
 #### Get Started
 1. Habilitar el `WSL` en el equipo donde se vaya a ejecutar el programa y una vez habilitado el '`WSL` instalar la [Distribucion de linux](https://computerhoy.com/noticias/software/que-es-distribucion-linux-que-diferencian-como-elegir-54784) preferida, en ese caso `Ubuntu`.
 2. Arrancar `docker`, mediante el programa `docker desktop`.
-3. 
-4. Utilizar el comando `git clone` en `Visual Studio Code` para clonar el repositorio en el directorio que apunte su terminal.
-5. Dentro del directorio [backend](https://github.com/CAMPUSCAMARAFP2021/ProyectoDavidAPI/tree/master/backend), ejecutar el comando `npm install` en la raíz, esto hará que las dependencias se instalen, despues así pueda funcionar el proyecto;, es importante tenerlas ya que sin ella el proyecto no correrá correctamente.
-6. Dentro del directorio [react](https://github.com/CAMPUSCAMARAFP2021/ProyectoDavidAPI/tree/master/react), ejecutar el comando `npm install` en la raíz, esto hará que las dependencias se instalen, despues así pueda funcionar el proyecto;, es importante tenerlas ya que sin ella el proyecto no correrá correctamente.
-7. Dentro del directorio [ProyectoDavidAPI](https://github.com/CAMPUSCAMARAFP2021/ProyectoDavidAPI), ejecutar el comando `npm install` en la raíz,  esto hará que las dependencias se instalen, despues así pueda funcionar el proyecto;, es importante tenerlas ya que sin ella el proyecto no correrá correctamente.
-8. Por ultimo levantaremos el proyecto usando la terminal, dirigiéndonos al directorio `ProyectoDavidApi` y ejecutando el siguiente comando `docker-compose up`
-9. Si todo salió bien, la terminal  mostrará un mensaje indicándonos que la api está trabajando bajo el puerto 3001 y la base de datos ha sido conectada.
+3. Dentro de `Visual Studio Code` debes instalar las extensiones de `docker`,`Remote - Containers`,`Remote - SSH`,`Remote - WSL`,
+`Remote - Development`.
+4. Una vez instaladas las extensiones tienes que abrir una conexion remota dentro del `Visual Studio Code`.
+5. Utilizar el comando `git clone` en `Visual Studio Code` para clonar el repositorio en el directorio que apunte su terminal.
+6. Dentro del directorio [backend](https://github.com/CAMPUSCAMARAFP2021/ProyectoDavidAPI/tree/master/backend), ejecutar el comando `npm install` en la raíz, esto hará que las dependencias se instalen, despues así pueda funcionar el proyecto;, es importante tenerlas ya que sin ella el proyecto no correrá correctamente.
+7. Dentro del directorio [react](https://github.com/CAMPUSCAMARAFP2021/ProyectoDavidAPI/tree/master/react), ejecutar el comando `npm install` en la raíz, esto hará que las dependencias se instalen, despues así pueda funcionar el proyecto;, es importante tenerlas ya que sin ella el proyecto no correrá correctamente.
+8. Dentro del directorio [ProyectoDavidAPI](https://github.com/CAMPUSCAMARAFP2021/ProyectoDavidAPI), ejecutar el comando `npm install` en la raíz,  esto hará que las dependencias se instalen, despues así pueda funcionar el proyecto;, es importante tenerlas ya que sin ella el proyecto no correrá correctamente.
+9. Por ultimo levantaremos el proyecto usando la terminal, dirigiéndonos al directorio `ProyectoDavidApi` y ejecutando el siguiente comando `docker-compose up`
+10. Si todo salió bien, la terminal  mostrará un mensaje indicándonos que la api está trabajando bajo el puerto 3001 y la base de datos ha sido conectada.
 
 ## Uso de la API
 
