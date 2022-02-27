@@ -6,8 +6,16 @@ const schema = new Schema({
 
     kind:   String,
 
+
+    players:[{ type: Schema.Types.ObjectId,
+
+      ref: 'Player'
+}]
+
   },
 
+
+  
   );
 
 

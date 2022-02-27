@@ -3,6 +3,8 @@ var express = require('express');
 var router = express.Router();
 
 var playerController = require('../controllers/player')
+var ballRouter = require('./balls')
+
 
 router.get('/', async function(req, res) {
 
@@ -10,8 +12,6 @@ router.get('/', async function(req, res) {
     res.json(players);
 
 });
-
-
 
 router.post('/',async(req, res) => {
 
@@ -22,8 +22,6 @@ router.post('/',async(req, res) => {
 });
 
 
-
-
 router.delete('/:playerId', async(req,res) => {
 
     const {playerId} = req.params;
@@ -32,7 +30,15 @@ router.delete('/:playerId', async(req,res) => {
 
 });
 
+router.use('/:playerId/balls', async (req, res, next) => {
 
+    const {playerId} = req.params;
+
+    req.player = await playerController.getPlayers(playerId);
+
+    next();
+
+} ,ballRouter);
 
 module.exports = router;
 

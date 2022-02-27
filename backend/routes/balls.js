@@ -4,15 +4,6 @@ var router = express.Router();
 
 var ballController = require('../controllers/ball')
 
-router.get('/', async function(req, res) {
-
-    const balls = await ballController.getBall();
-    res.json(balls);
-
-});
-
-
-
 router.post('/',async(req, res) => {
 
     const {ball} = req.body;
@@ -20,9 +11,6 @@ router.post('/',async(req, res) => {
     res.json(result);
 
 });
-
-
-
 
 router.delete('/:ballId', async(req,res) => {
 
@@ -32,7 +20,15 @@ router.delete('/:ballId', async(req,res) => {
 
 });
 
+router.get('/', async function(req, res) {
 
+    console.log(req.player)
+
+    const balls = req.player ? await ballController.getBallsbyPlayer(req.player) : await ballController.getBall();
+
+    res.json(balls);
+
+});
 
 module.exports = router;
 

@@ -12,6 +12,10 @@ const deleteBall = async (ballId) => {     
 }
 
 
+const getBallsbyPlayer = async(player) =>{    return await Ball.find({player}).populate("players")}
+
+
+
 const getBall = async () => {     
     return await Ball.find()}
 
@@ -19,6 +23,7 @@ const getBall = async () => {     
 module.exports = { 
      createBall,    
      getBall,
-    deleteBall
+    deleteBall,
+    getBallsbyPlayer
     }
 
